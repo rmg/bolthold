@@ -11,6 +11,9 @@ funcs to the `Options` struct on Open.
 One Go Type will have one bucket, and multiple index buckets in a BoltDB file, so you can store multiple Go Types in the
 same database.
 
+Note: Since the original BoltDB project has been archived, this project now uses the spiritual successor,
+[coreos/bbolt](https://github.com/coreos/bbolt), which is being maintained by the CoreOS team and is backwards compatible.
+
 ## Why not just use Bolt DB directly?
 I love BoltDB, and I've used it in several projects.  However, I find myself writing the same code over and over again,
 for encoding and decoding objects and searching through data.  I figure formalizing how I've been using BoltDB
